@@ -1,0 +1,17 @@
+D:\Development\Practice\Project\Healthcare\Data.AccessLayer\bin\Debug\net8.0\Data.AccessLayer.deps.json
+D:\Development\Practice\Project\Healthcare\Data.AccessLayer\bin\Debug\net8.0\Data.AccessLayer.runtimeconfig.json
+D:\Development\Practice\Project\Healthcare\Data.AccessLayer\bin\Debug\net8.0\Data.AccessLayer.dll
+D:\Development\Practice\Project\Healthcare\Data.AccessLayer\bin\Debug\net8.0\Data.AccessLayer.pdb
+D:\Development\Practice\Project\Healthcare\Data.AccessLayer\bin\Debug\net8.0\Global.Entity.dll
+D:\Development\Practice\Project\Healthcare\Data.AccessLayer\bin\Debug\net8.0\Global.Entity.pdb
+D:\Development\Practice\Project\Healthcare\Data.AccessLayer\obj\Debug\net8.0\Data.AccessLayer.csproj.AssemblyReference.cache
+D:\Development\Practice\Project\Healthcare\Data.AccessLayer\obj\Debug\net8.0\Data.AccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Development\Practice\Project\Healthcare\Data.AccessLayer\obj\Debug\net8.0\Data.AccessLayer.AssemblyInfoInputs.cache
+D:\Development\Practice\Project\Healthcare\Data.AccessLayer\obj\Debug\net8.0\Data.AccessLayer.AssemblyInfo.cs
+D:\Development\Practice\Project\Healthcare\Data.AccessLayer\obj\Debug\net8.0\Data.AccessLayer.csproj.CoreCompileInputs.cache
+D:\Development\Practice\Project\Healthcare\Data.AccessLayer\obj\Debug\net8.0\Data.Acc.58B6899B.Up2Date
+D:\Development\Practice\Project\Healthcare\Data.AccessLayer\obj\Debug\net8.0\Data.AccessLayer.dll
+D:\Development\Practice\Project\Healthcare\Data.AccessLayer\obj\Debug\net8.0\refint\Data.AccessLayer.dll
+D:\Development\Practice\Project\Healthcare\Data.AccessLayer\obj\Debug\net8.0\Data.AccessLayer.pdb
+D:\Development\Practice\Project\Healthcare\Data.AccessLayer\obj\Debug\net8.0\Data.AccessLayer.genruntimeconfig.cache
+D:\Development\Practice\Project\Healthcare\Data.AccessLayer\obj\Debug\net8.0\ref\Data.AccessLayer.dll

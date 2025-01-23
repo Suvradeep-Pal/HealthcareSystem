@@ -1,0 +1,11 @@
+D:\Development\Practice\Project\Healthcare\Global.Entity\bin\Debug\net8.0\Global.Entity.deps.json
+D:\Development\Practice\Project\Healthcare\Global.Entity\bin\Debug\net8.0\Global.Entity.dll
+D:\Development\Practice\Project\Healthcare\Global.Entity\bin\Debug\net8.0\Global.Entity.pdb
+D:\Development\Practice\Project\Healthcare\Global.Entity\obj\Debug\net8.0\Global.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Development\Practice\Project\Healthcare\Global.Entity\obj\Debug\net8.0\Global.Entity.AssemblyInfoInputs.cache
+D:\Development\Practice\Project\Healthcare\Global.Entity\obj\Debug\net8.0\Global.Entity.AssemblyInfo.cs
+D:\Development\Practice\Project\Healthcare\Global.Entity\obj\Debug\net8.0\Global.Entity.csproj.CoreCompileInputs.cache
+D:\Development\Practice\Project\Healthcare\Global.Entity\obj\Debug\net8.0\Global.Entity.dll
+D:\Development\Practice\Project\Healthcare\Global.Entity\obj\Debug\net8.0\refint\Global.Entity.dll
+D:\Development\Practice\Project\Healthcare\Global.Entity\obj\Debug\net8.0\Global.Entity.pdb
+D:\Development\Practice\Project\Healthcare\Global.Entity\obj\Debug\net8.0\ref\Global.Entity.dll

@@ -1,0 +1,279 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+@model Global.Entity.Patient;
+
+<div class="card" style="background-color: #F5EFE7">
+    <div class="card-title">
+        <h2>Add/Edit a Patient</h2>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Id</label>
+                    <input id="txtid" value="@Model.Id" disabled="disabled" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input id="txtfirstname" value="@Model.FirstName" class="form-control" asp-for="FirstName" />
+                    <span id="validateFirstName" asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input id="txtlastname" value="@Model.LastName" class="form-control" />
+                    <span id="validateLastName" asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="DateOfBirth">Date of Birth</label>
+                    <div class="input-group">
+                    <input type="text" class="form-control datepicker" id="txtdob" name="DateOfBirth" placeholder="YYYY-MM-DD" value="@Model.DateOfBirth.ToString("yyyy-MM-dd")" />                   
+                    <span class="input-group-text">
+                        <i class="bi bi-calendar-event"></i>
+                    </span>                   
+                    </div>
+                    <span id="validateDob" asp-validation-for="DateOfBirth" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Gender</label>
+                    
+                    <select input id="txtgender" class="custom-select form-control">
+                        <option value="">Choose Gender</option>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                    <span id="validateGender" asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Address</label>
+                    <input id="txtaddress" value="@Model.Address" class="form-control" />
+                    <span id="validateAddress" asp-validation-for="Address" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input id="txtphone" value="@Model.Phone" class="form-control" maxlength="10" pattern="\d{10}" placeholder="Enter 10-digit phone number" required oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);" />
+                    <span id="validatePhone" asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <br />
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group" style="margin">
+                    <a onclick="handlesave()" class="btn btn-success">Save</a> <a onclick="backtolist()" class="btn btn-danger">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/lib/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/lib/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // Datepicker
+        $('.datepicker').datepicker({
+            format: 'yyyy-mm-dd',
+            autoclose: true, 
+            todayHighlight: true, 
+            clearBtn: true,       
+            orientation: 'bottom auto', 
+            templates: {
+                leftArrow: '<i class="bi bi-arrow-left"></i>',
+                rightArrow: '<i class="bi bi-arrow-right"></i>'
+            }
+
+        });
+    });
+</script>
+
+<script type="text/javascript">
+
+    function backtolist(){
+        window.location.href = "/patient";
+    }
+
+    function handlesave(){
+        
+        var id = $('#txtid').val();
+        var firstname = $('#txtfirstname').val();
+        var lastname = $('#txtlastname').val();
+        var dob = $('#txtdob').val();
+        var gender = $('#txtgender').val();
+        var address = $('#txtaddress').val();
+        var phone = $('#txtphone').val();
+
+        var isproceed = true;
+
+        if(!firstname){  
+            $('#txtfirstname').css('border-color', 'red');
+            $('#validateFirstName').text('First Name is missing!').show();
+            isproceed = false;
+        } 
+        
+        else if (!/^[a-zA-Z\s]+$/.test(firstname)){
+            $('#txtfirstname').css('border-color', 'red');
+            $('#validateFirstName').text('Name can only contain letters and spaces!').show();
+            isproceed = false;
+        }
+        
+        else if(firstname.length > 100){
+            $('#txtfirstname').css('border-color', 'red');
+            $('#validateFirstName').text('Character limit exceeds 100!').show();
+            isproceed = false;
+        }else{
+            $('#txtfirstname').css('border-color', '#ccc');
+            $('#validateFirstName').hide();
+        }
+
+        if (!lastname) {
+            $('#txtlastname').css('border-color', 'red');
+            $('#validateLastName').text('Last Name is missing!').show();
+            isproceed = false;
+        } 
+        
+        else if (!/^[a-zA-Z\s]+$/.test(lastname)) {
+            $('#txtlastname').css('border-color', 'red');
+            $('#validateLastName').text('Name can only contain letters and spaces!').show();
+            isproceed = false;
+        }
+        
+        else if(lastname.length > 100) {
+            $('#txtlastname').css('border-color', 'red');
+            $('#validateLastName').text('Character limit exceeds 100!').show();
+            isproceed = false;
+        }else {
+            $('#txtlastname').css('border-color', '#ccc');
+            $('#validateLastName').hide();
+        }
+
+        if (!dob) {
+            $('#txtdob').css('border-color', 'red');
+            $('#validateDob').text('Select your Date of Birth!').show();
+            isproceed = false;
+        } else if (dob.length > 100) {
+            $('#txtdob').css('border-color', 'red');
+            $('#validateDob').text('Character limit exceeds 100!').show();
+            isproceed = false;
+        } else {
+            $('#txtdob').css('border-color', '#ccc');
+            $('#validateDob').hide();
+        }
+
+        if (!gender) {
+            $('#txtgender').css('border-color', 'red');
+            $('#validateGender').text('Choose your Gender!').show();
+            isproceed = false;
+        } else if (gender.length > 100) {
+            $('#txtgender').css('border-color', 'red');
+            $('#validateGender').text('Character limit exceeds 100!').show();
+            isproceed = false;
+        } else {
+            $('#txtgender').css('border-color', '#ccc');
+            $('#validateGender').hide();
+        }
+
+        if (!address) {
+            $('#txtaddress').css('border-color', 'red');
+            $('#validateAddress').text('Provide proper address!').show();
+            isproceed = false;
+        } else if (address.length > 100) {
+            $('#txtaddress').css('border-color', 'red');
+            $('#validateAddress').text('Character limit exceeds 100!').show();
+            isproceed = false;
+        } else {
+            $('#txtaddress').css('border-color', '#ccc');
+            $('#validateAddress').hide();
+        }
+
+
+        if (!phone) {
+            $('#txtphone').css('border-color', 'red');
+            $('#validatePhone').text('Phone number is missing!').show();
+            isproceed = false;
+        } 
+        
+        else if (!/^[0-9]+$/.test(phone)) {
+            $('#txtphone').css('border-color', 'red');
+            $('#validatePhone').text('Phone number can only contain numeric values!').show();
+            isproceed = false;
+        }
+        
+        else if (phone.length > 10) {
+            $('#txtphone').css('border-color', 'red');
+            $('#validatePhone').text('Character limit exceeds 10!').show();
+            isproceed = false;
+        } else {
+            $('#txtphone').css('border-color', '#ccc');
+            $('#validatePhone').hide();
+        }
+
+        if(isproceed){
+            var _patient = new Object();
+            _patient.Id = parseInt(id);
+            _patient.FirstName = firstname;
+            _patient.LastName = lastname;
+            _patient.DateOfBirth = dob;
+            _patient.Gender = gender;
+            _patient.Address = address;
+            _patient.Phone = phone;
+
+            $.ajax({
+                typeof:"POST",
+                url:"/Patient/Save",
+                data:_patient,
+                success: function (data) {
+                    if (data == 'pass') {
+                        alert("Saved Successfully");
+                        backtolist();
+                    }else{
+                        alert("Failed due to: " + data);
+                        $("#validation-errors").html(data.errors);
+                    }
+                },
+                failure: function(err){
+
+                }
+            });
+        }
+    }
+</script>
+

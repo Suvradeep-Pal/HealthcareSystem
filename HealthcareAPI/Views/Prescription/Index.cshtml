@@ -1,0 +1,77 @@
+﻿@model List<Global.Entity.Prescription>
+<div class="card">
+    <div class="card-body" style="background-color: #F5EFE7">
+        <a class="btn btn-success" asp-controller="Prescription" asp-action="Create">Add Prescription</a>
+        <div class="card-title">
+            <h2>Prescription List</h2>
+        </div>
+        <table class="table table-bordered table-striped">
+            <thead class="text-white" style="background-color: #213555">
+                <tr>
+                    <td>Id</td>
+                    <td>Medicine</td>
+                    <td>Symptoms</td>
+                    <td>Doctor Name</td>
+                    <td>Patient Name</td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Global.Entity.Prescription item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.Id)
+                            @Html.HiddenFor(itemdisplay => item.Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.Medicine)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.Symptoms)                         
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.DName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.PatientName)
+                        </td>
+                        <td>
+                            <a onclick="FunEdit(this)" class="btn btn-primary">Edit</a> | <a onclick="FunRemove(this)" class="btn btn-danger">Remove</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function FunEdit(element) {
+        var id = $(element).closest('tr').find('input[type = hidden]').val();
+        window.location.href = "/prescription/Edit?id=" + id;
+    }
+
+    function FunRemove(element) {
+        var id = $(element).closest('tr').find('input[type = hidden]').val();
+        if (confirm("Do you want to remove the record?")) {
+            $.ajax({
+                typeof: "POST",
+                url: "/Prescription/Remove",
+                data: { id: id },
+                success: function (data) {
+                    if (data == 'pass') {
+                        alert("Removed Successfully");
+                        window.location.reload();
+                    } else {
+                        alert("Failed due to: " + data);
+                    }
+                },
+                failure: function (err) {
+
+                }
+            });
+        }
+    }
+</script>
+

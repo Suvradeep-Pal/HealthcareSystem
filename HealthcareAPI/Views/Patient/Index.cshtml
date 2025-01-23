@@ -1,0 +1,85 @@
+﻿@model List<Global.Entity.Patient>
+<div class="card" style="background-color: #F5EFE7">
+        <div class="card-body">
+        <a class="btn btn-success" asp-controller="Patient" asp-action="Create">Add Patient</a>
+            <div class="card-title">
+                <h2>Patients List</h2>
+            </div>
+            <table class="table table-bordered table-striped">
+            <thead class="text-white" style="background-color: #213555">
+                    <tr>
+                        <td>Id</td>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                        <td>Date of Birth</td>
+                        <td>Gender</td>
+                        <td>Address</td>
+                        <td>Phone</td>
+                        <td>Action</td>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach(Global.Entity.Patient item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.Id)
+                            @Html.HiddenFor(itemdisplay => item.Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.FirstName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.LastName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.DateOfBirth)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.Gender)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.Address)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.Phone)
+                        </td>
+                        <td>
+                            <a onclick="FunEdit(this)" class="btn btn-primary">Edit</a> | <a onclick="FunRemove(this)" class="btn btn-danger">Remove</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            </table>
+        </div>
+    </div>
+
+<script type="text/javascript">
+    function FunEdit(element) {
+        var id = $(element).closest('tr').find('input[type = hidden]').val();
+        window.location.href = "/patient/Edit?id=" + id;
+    }
+
+    function FunRemove(element) {
+        var id = $(element).closest('tr').find('input[type = hidden]').val();
+        if (confirm("Do you want to remove the record?")) {
+            $.ajax({
+                typeof: "POST",
+                url: "/Patient/Remove",
+                data: { id: id },
+                success: function (data) {
+                    if (data == 'pass') {
+                        alert("Removed Successfully");
+                        window.location.reload();
+                    } else {
+                        alert("Failed due to: " + data);
+                    }
+                },
+                failure: function (err) {
+
+                }
+            });
+        }
+    }
+</script>
+

@@ -1,0 +1,187 @@
+﻿@{
+    ViewData["Title"] = "Create";
+}
+@model Global.Entity.Doctor;
+
+<div class="card" style="background-color: #F5EFE7">
+    <div class="card-title">
+        <h2>Add/Edit a Doctor</h2>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Id</label>
+                    <input id="txtid" value="@Model.Id" disabled="disabled" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input id="txtfirstname" value="@Model.FirstName" class="form-control" />
+                    <span id="validateFirstName" asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input id="txtlastname" value="@Model.LastName" class="form-control" />
+                    <span id="validateLastName" asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Gender</label>
+                    <select input id="txtgender" class="custom-select form-control">
+                        <option value="">Choose Gender</option>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                    <span id="validateGender" asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Specialization</label>
+                    <input id="txtspecialization" value="@Model.Specialization" class="form-control" />
+                    <span id="validateSpecialization" asp-validation-for="Specialization" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <br />
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group" style="margin">
+                    <a onclick="handlesave()" class="btn btn-success">Save</a> <a onclick="backtolist()" class="btn btn-danger">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+
+    function backtolist() {
+        window.location.href = "/doctor";
+    }
+
+    function handlesave() {
+        var id = $('#txtid').val();
+        var firstname = $('#txtfirstname').val();
+        var lastname = $('#txtlastname').val();
+        var gender = $('#txtgender').val();
+        var specialization = $('#txtspecialization').val();
+
+        var isproceed = true;
+
+        if (!firstname) {
+            $('#txtfirstname').css('border-color', 'red');
+            $('#validateFirstName').text('First Name is missing!').show();
+            isproceed = false;
+        }
+
+        else if (!/^[a-zA-Z\s]+$/.test(firstname)) {
+            $('#txtfirstname').css('border-color', 'red');
+            $('#validateFirstName').text('Name can only contain letters and spaces!').show();
+            isproceed = false;
+        }
+        
+        else if (firstname.length > 100) {
+            $('#txtfirstname').css('border-color', 'red');
+            $('#validateFirstName').text('Character limit exceeds 100!').show();
+            isproceed = false;
+        } else {
+            $('#txtfirstname').css('border-color', '#ccc');
+            $('#validateFirstName').hide();
+        }
+
+        if (!lastname) {
+            $('#txtlastname').css('border-color', 'red');
+            $('#validateLastName').text('Last Name is missing!').show();
+            isproceed = false;
+        }
+
+        else if (!/^[a-zA-Z\s]+$/.test(lastname)) {
+            $('#txtlastname').css('border-color', 'red');
+            $('#validateLastName').text('Name can only contain letters and spaces!').show();
+            isproceed = false;
+        }
+        
+        else if (lastname.length > 100) {
+            $('#txtlastname').css('border-color', 'red');
+            $('#validateLastName').text('Character limit exceeds 100!').show();
+            isproceed = false;
+        } else {
+            $('#txtlastname').css('border-color', '#ccc');
+            $('#validateLastName').hide();
+        }
+
+        if (!gender) {
+            $('#txtgender').css('border-color', 'red');
+            $('#validateGender').text('Choose your Gender!').show();
+            isproceed = false;
+        } else if (gender.length > 100) {
+            $('#txtgender').css('border-color', 'red');
+            $('#validateGender').text('Character limit exceeds 100!').show();
+            isproceed = false;
+        } else {
+            $('#txtgender').css('border-color', '#ccc');
+            $('#validateGender').hide();
+        }
+
+        if (!specialization) {
+            $('#txtspecialization').css('border-color', 'red');
+            $('#validateSpecialization').text('Provide Specialization!').show();
+            isproceed = false;
+        } else if (specialization.length > 100) {
+            $('#txtspecialization').css('border-color', 'red');
+            $('#validateSpecialization').text('Character limit exceeds 100!').show();
+            isproceed = false;
+        } else {
+            $('#txtspecialization').css('border-color', '#ccc');
+            $('#validateSpecialization').hide();
+        }
+
+        if (isproceed) {
+            var _doctor = new Object();
+            _doctor.Id = parseInt(id);
+            _doctor.FirstName = firstname;
+            _doctor.LastName = lastname;
+            _doctor.Gender = gender;
+            _doctor.Specialization = specialization;
+            
+
+            $.ajax({
+                typeof: "POST",
+                url: "/Doctor/Save",
+                data: _doctor,
+                success: function (data) {
+                    if (data == 'pass') {
+                        alert("Saved Successfully");
+                        backtolist();
+                    } else {
+                        alert("Failed due to: " + data);
+                    }
+                },
+                failure: function (err) {
+
+                }
+            });
+        }
+    }
+</script>
+

@@ -1,0 +1,174 @@
+﻿@{
+    ViewData["Title"] = "Create";
+}
+@model Healthcare.UI.Models.PrescriptionViewModel;
+
+<div class="card" style="background-color: #F5EFE7">
+    <div class="card-title">
+        <h2>Add/Edit a Prescription</h2>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Id</label>
+                    <input id="txtid" value="@Model.Id" disabled="disabled" class="form-control" />
+                </div>
+            </div>
+        </div>
+       
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Medicine</label>
+                    <input id="txtmedicine" value="@Model.Medicine" class="form-control" />
+                    <span id="validateMedicine" asp-validation-for="Medicine" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Symptoms</label>
+                    <input id="txtsymptoms" value="@Model.Symptoms" class="form-control" />
+                    <span id="validateSymptoms" asp-validation-for="Symptoms" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Doctor Name</label>
+                    @Html.DropDownListFor(model => model.DId, Model.DDLDoctor, "Select an option", new { @class = "form-control", id = "ddlDoctor" })
+                    <span id="validateDoctorName" asp-validation-for="DName" class="text-danger"></span>
+                </div>
+            </div>
+        </div>   
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Patient Name</label>
+                    @Html.DropDownListFor(model => model.PId, Model.DDLPatient, "Select an option", new { @class = "form-control", id = "ddlPatient" })
+                    <span id="validatePatientName" asp-validation-for="PatientName" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        
+        <br />
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group" style="margin">
+                    <a onclick="handlesave()" class="btn btn-success">Save</a> <a onclick="backtolist()" class="btn btn-danger">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+
+    function backtolist() {
+        window.location.href = "/prescription";
+    }
+
+    function handlesave() {
+        debugger;
+        var id = $('#txtid').val();
+        var medicine = $('#txtmedicine').val();
+        var pid = parseInt($('#ddlPatient').val());
+        var did = parseInt($('#ddlDoctor').val());
+        var symptoms = $('#txtsymptoms').val();
+        var dname = $('#ddlDoctor option:selected').text();
+        var pname = $('#ddlPatient option:selected').text();
+
+        var isproceed = true;
+
+      if(!pid){  
+            $('#ddlPatient').css('border-color', 'red');
+            $('#validatePatientName').text('Patient Name is missing!').show();
+            isproceed = false;
+        } else if(pid.length > 100){
+            $('#ddlPatient').css('border-color', 'red');
+            $('#validatePatientName').text('Character limit exceeds 100!').show();
+            isproceed = false;
+        }else{
+            $('#ddlPatient').css('border-color', '#ccc');
+            $('#validatePatientName').hide();
+        }
+
+        if(!did){  
+            $('#ddlDoctor').css('border-color', 'red');
+            $('#validateDoctorName').text('Doctor Name is missing!').show();
+            isproceed = false;
+        } else if(did.length > 100){
+            $('#ddlDoctor').css('border-color', 'red');
+            $('#validateDoctorName').text('Character limit exceeds 100!').show();
+            isproceed = false;
+        }else{
+            $('#ddlDoctor').css('border-color', '#ccc');
+            $('#validateDoctorName').hide();
+        }
+
+        if (!symptoms) {  
+            $('#txtsymptoms').css('border-color', 'red');
+            $('#validateSymptoms').text('Mention the Symptom!').show();
+            isproceed = false;
+        } else if(symptoms.length > 100){
+            $('#txtsymptoms').css('border-color', 'red');
+            $('#validateSymptoms').text('Character limit exceeds 100!').show();
+            isproceed = false;
+        }else{
+            $('#txtsymptoms').css('border-color', '#ccc');
+            $('#validateSymptoms').hide();
+        }
+
+        if (!medicine) {  
+            $('#txtmedicine').css('border-color', 'red');
+            $('#validateMedicine').text('Enter the Medicine name!').show();
+            isproceed = false;
+        } else if(medicine.length > 100){
+            $('#txtmedicine').css('border-color', 'red');
+            $('#validateMedicine').text('Character limit exceeds 100!').show();
+            isproceed = false;
+        }else{
+            $('#txtmedicine').css('border-color', '#ccc');
+            $('#validateMedicine').hide();
+        }
+
+
+        if (isproceed) {
+            var _prescription = new Object();
+            _prescription.Id = parseInt(id);
+            _prescription.PatientName = pname;
+            _prescription.PId = pid;
+            _prescription.DId = did;
+            _prescription.DName = dname;
+            _prescription.Symptoms = symptoms;
+            _prescription.Medicine = medicine;
+
+
+            $.ajax({
+                typeof: "POST",
+                url: "/Prescription/Save",
+                data: _prescription,
+                success: function (data) {
+                    if (data == 'pass') {
+                        alert("Saved Successfully");
+                        backtolist();
+                    } else {
+                        alert("Failed due to: " + data);
+                    }
+                },
+                failure: function (err) {
+
+                }
+            });
+        }
+    }
+</script>
+
