@@ -291,3 +291,4 @@ D:\Development\Practice\Project\Healthcare\Healthcare.API\bin\Debug\net8.0\Globa
 D:\Development\Practice\Project\Healthcare\Healthcare.API\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
 D:\Development\Practice\Project\Healthcare\Healthcare.API\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\Development\Practice\Project\Healthcare\Healthcare.API\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+D:\Development\Practice\Project\Healthcare\Healthcare.API\obj\Debug\net8.0\Healthcare.API.sourcelink.json

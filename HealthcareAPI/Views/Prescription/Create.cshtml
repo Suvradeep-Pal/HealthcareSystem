@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="form-group">
-                    <label>Medicine</label>
+                    <label>Medicine <span style="color:red;">*</span></label>
                     <input id="txtmedicine" value="@Model.Medicine" class="form-control" />
                     <span id="validateMedicine" asp-validation-for="Medicine" class="text-danger"></span>
                 </div>
@@ -30,7 +30,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="form-group">
-                    <label>Symptoms</label>
+                    <label>Symptoms <span style="color:red;">*</span></label>
                     <input id="txtsymptoms" value="@Model.Symptoms" class="form-control" />
                     <span id="validateSymptoms" asp-validation-for="Symptoms" class="text-danger"></span>
                 </div>
@@ -40,8 +40,8 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="form-group">
-                    <label>Doctor Name</label>
-                    @Html.DropDownListFor(model => model.DId, Model.DDLDoctor, "Select an option", new { @class = "form-control", id = "ddlDoctor" })
+                    <label>Doctor Name <span style="color:red;">*</span></label>
+                    @Html.DropDownListFor(model => model.DId, Model.DDLDoctor, "Select doctor", new { @class = "form-control", id = "ddlDoctor" })
                     <span id="validateDoctorName" asp-validation-for="DName" class="text-danger"></span>
                 </div>
             </div>
@@ -50,8 +50,8 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="form-group">
-                    <label>Patient Name</label>
-                    @Html.DropDownListFor(model => model.PId, Model.DDLPatient, "Select an option", new { @class = "form-control", id = "ddlPatient" })
+                    <label>Patient Name <span style="color:red;">*</span></label>
+                    @Html.DropDownListFor(model => model.PId, Model.DDLPatient, "Select patient", new { @class = "form-control", id = "ddlPatient" })
                     <span id="validatePatientName" asp-validation-for="PatientName" class="text-danger"></span>
                 </div>
             </div>

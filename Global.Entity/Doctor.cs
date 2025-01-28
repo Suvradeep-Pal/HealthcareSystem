@@ -35,5 +35,7 @@ namespace Global.Entity
         public DateTime? DateUpdated { get; set; }
 
         public int? UserUpdated { get; set; }
+
+        public bool Status { get; set; }
     }
 }

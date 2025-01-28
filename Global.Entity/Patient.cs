@@ -45,6 +45,9 @@ namespace Global.Entity
 
         public int? UserUpdated { get; set; }
 
+
+        public bool Status { get; set; }
+
         //public virtual ICollection<Prescription> Prescriptions { get; set; } = new List<Prescription>();
     }
 }

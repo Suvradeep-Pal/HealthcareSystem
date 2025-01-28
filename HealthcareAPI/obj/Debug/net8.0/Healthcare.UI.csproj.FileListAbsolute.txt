@@ -578,3 +578,4 @@ D:\Development\Practice\Project\Healthcare\HealthcareAPI\bin\Debug\net8.0\runtim
 D:\Development\Practice\Project\Healthcare\HealthcareAPI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 D:\Development\Practice\Project\Healthcare\HealthcareAPI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\Development\Practice\Project\Healthcare\HealthcareAPI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\Development\Practice\Project\Healthcare\HealthcareAPI\obj\Debug\net8.0\Healthcare.UI.sourcelink.json

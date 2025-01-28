@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="form-group">
-                    <label>First Name</label>
+                    <label>First Name <span style="color:red;">*</span></label>
                     <input id="txtfirstname" value="@Model.FirstName" class="form-control" />
                     <span id="validateFirstName" asp-validation-for="FirstName" class="text-danger"></span>
                 </div>
@@ -30,7 +30,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="form-group">
-                    <label>Last Name</label>
+                    <label>Last Name <span style="color:red;">*</span></label>
                     <input id="txtlastname" value="@Model.LastName" class="form-control" />
                     <span id="validateLastName" asp-validation-for="LastName" class="text-danger"></span>
                 </div>
@@ -41,8 +41,9 @@
             <div class="col-lg-6">
                 <div class="form-group">
                     <label>Gender</label>
+                    <input type="hidden" id="gender" name="Gender" value="@Model.Gender" />
                     <select input id="txtgender" class="custom-select form-control">
-                        <option value="">Choose Gender</option>
+                        <option value="" disabled selected>Select gender</option>
                         <option value="M">Male</option>
                         <option value="F">Female</option>
                     </select>
@@ -54,7 +55,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="form-group">
-                    <label>Specialization</label>
+                    <label>Specialization <span style="color:red;">*</span></label>
                     <input id="txtspecialization" value="@Model.Specialization" class="form-control" />
                     <span id="validateSpecialization" asp-validation-for="Specialization" class="text-danger"></span>
                 </div>
@@ -73,6 +74,15 @@
 </div>
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        if ($('#gender').val()) {
+            $('#txtgender').val($('#gender').val());
+        }
+    });
+</script>
+
 <script type="text/javascript">
 
     function backtolist() {

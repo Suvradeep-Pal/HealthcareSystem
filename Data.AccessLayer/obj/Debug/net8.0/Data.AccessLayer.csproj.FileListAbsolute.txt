@@ -15,3 +15,4 @@ D:\Development\Practice\Project\Healthcare\Data.AccessLayer\obj\Debug\net8.0\ref
 D:\Development\Practice\Project\Healthcare\Data.AccessLayer\obj\Debug\net8.0\Data.AccessLayer.pdb
 D:\Development\Practice\Project\Healthcare\Data.AccessLayer\obj\Debug\net8.0\Data.AccessLayer.genruntimeconfig.cache
 D:\Development\Practice\Project\Healthcare\Data.AccessLayer\obj\Debug\net8.0\ref\Data.AccessLayer.dll
+D:\Development\Practice\Project\Healthcare\Data.AccessLayer\obj\Debug\net8.0\Data.AccessLayer.sourcelink.json
