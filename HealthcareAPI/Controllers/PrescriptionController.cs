@@ -74,7 +74,7 @@ namespace Healthcare.UI.Controllers
 
             if (!string.IsNullOrWhiteSpace(prescription.Name))
             {
-                prescription.prescriptions = prescription.prescriptions.Where(x => x.Medicine.Contains(prescription.Name)).ToList();
+                prescription.prescriptions = prescription.prescriptions.Where(x => x.Medicine.ToLower().Trim().Contains(prescription.Name.ToLower().Trim())).ToList();
             }
 
             if (prescription.Status != null && prescription.Status != false)

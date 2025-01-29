@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "D:\\Development\\Practice\\Project\\Healthcare\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|solutionrelative:healthcareapi\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\views\\prescription\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|solutionrelative:healthcareapi\\views\\prescription\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\views\\patient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|solutionrelative:healthcareapi\\views\\patient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\views\\doctor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|solutionrelative:healthcareapi\\views\\doctor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\controllers\\prescriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|solutionrelative:healthcareapi\\controllers\\prescriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\models\\patientsearchviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|solutionrelative:healthcareapi\\models\\patientsearchviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|solutionrelative:healthcareapi\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\views\\doctor\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|solutionrelative:healthcareapi\\views\\doctor\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\views\\patient\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|solutionrelative:healthcareapi\\views\\patient\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|solutionrelative:healthcareapi\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EA3F26E-0BE3-49F7-88AA-1901413F64D1}|Global.Entity\\Global.Entity.csproj|d:\\development\\practice\\project\\healthcare\\global.entity\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EA3F26E-0BE3-49F7-88AA-1901413F64D1}|Global.Entity\\Global.Entity.csproj|solutionrelative:global.entity\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EA3F26E-0BE3-49F7-88AA-1901413F64D1}|Global.Entity\\Global.Entity.csproj|d:\\development\\practice\\project\\healthcare\\global.entity\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EA3F26E-0BE3-49F7-88AA-1901413F64D1}|Global.Entity\\Global.Entity.csproj|solutionrelative:global.entity\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A8F3E46-796A-42FF-899A-72BF7A8BBB95}|Data.AccessLayer\\Data.AccessLayer.csproj|d:\\development\\practice\\project\\healthcare\\data.accesslayer\\doctorda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,30 +71,6 @@
       "RelativeMoniker": "D:0:0:{3A8F3E46-796A-42FF-899A-72BF7A8BBB95}|Data.AccessLayer\\Data.AccessLayer.csproj|solutionrelative:data.accesslayer\\prescriptionda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\views\\patient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|solutionrelative:healthcareapi\\views\\patient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\views\\patient\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|solutionrelative:healthcareapi\\views\\patient\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\views\\prescription\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|solutionrelative:healthcareapi\\views\\prescription\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\views\\doctor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|solutionrelative:healthcareapi\\views\\doctor\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\views\\doctor\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|solutionrelative:healthcareapi\\views\\doctor\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\controllers\\prescriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|solutionrelative:healthcareapi\\controllers\\prescriptioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|solutionrelative:healthcareapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -77,14 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3EA3F26E-0BE3-49F7-88AA-1901413F64D1}|Global.Entity\\Global.Entity.csproj|d:\\development\\practice\\project\\healthcare\\global.entity\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EA3F26E-0BE3-49F7-88AA-1901413F64D1}|Global.Entity\\Global.Entity.csproj|solutionrelative:global.entity\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EA3F26E-0BE3-49F7-88AA-1901413F64D1}|Global.Entity\\Global.Entity.csproj|d:\\development\\practice\\project\\healthcare\\global.entity\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EA3F26E-0BE3-49F7-88AA-1901413F64D1}|Global.Entity\\Global.Entity.csproj|solutionrelative:global.entity\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EA3F26E-0BE3-49F7-88AA-1901413F64D1}|Global.Entity\\Global.Entity.csproj|d:\\development\\practice\\project\\healthcare\\global.entity\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EA3F26E-0BE3-49F7-88AA-1901413F64D1}|Global.Entity\\Global.Entity.csproj|solutionrelative:global.entity\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\views\\prescription\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -113,10 +117,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|solutionrelative:healthcareapi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\models\\patientsearchviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|solutionrelative:healthcareapi\\models\\patientsearchviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0407CE02-896C-40EC-A5A0-3E53FE9E377B}|HealthcareAPI\\Healthcare.UI.csproj|d:\\development\\practice\\project\\healthcare\\healthcareapi\\models\\searchviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -174,17 +174,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "PatientController.cs",
               "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Controllers\\PatientController.cs",
               "RelativeDocumentMoniker": "HealthcareAPI\\Controllers\\PatientController.cs",
               "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Controllers\\PatientController.cs",
               "RelativeToolTip": "HealthcareAPI\\Controllers\\PatientController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowDQAAACiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T12:33:20.896Z",
               "EditorCaption": ""
@@ -192,109 +192,162 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Patient\\Index.cshtml",
-              "RelativeDocumentMoniker": "HealthcareAPI\\Views\\Patient\\Index.cshtml",
-              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Patient\\Index.cshtml",
-              "RelativeToolTip": "HealthcareAPI\\Views\\Patient\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-02T08:56:48.081Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PatientDA.cs",
-              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\PatientDA.cs",
-              "RelativeDocumentMoniker": "Data.AccessLayer\\PatientDA.cs",
-              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\PatientDA.cs",
-              "RelativeToolTip": "Data.AccessLayer\\PatientDA.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAHwAAAAmAAAAAAAAAA==",
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "HealthcareAPI\\Controllers\\DoctorController.cs",
+              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "HealthcareAPI\\Controllers\\DoctorController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwDEAAADDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T17:34:39.052Z",
+              "WhenOpened": "2025-01-28T08:12:15.33Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Doctor\\Create.cshtml",
-              "RelativeDocumentMoniker": "HealthcareAPI\\Views\\Doctor\\Create.cshtml",
-              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Doctor\\Create.cshtml",
-              "RelativeToolTip": "HealthcareAPI\\Views\\Doctor\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGoAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-02T09:12:44.285Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DoctorDA.cs",
-              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\DoctorDA.cs",
-              "RelativeDocumentMoniker": "Data.AccessLayer\\DoctorDA.cs",
-              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\DoctorDA.cs",
-              "RelativeToolTip": "Data.AccessLayer\\DoctorDA.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAuwHsAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T08:13:53.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Patient\\Create.cshtml",
               "RelativeDocumentMoniker": "HealthcareAPI\\Views\\Patient\\Create.cshtml",
               "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Patient\\Create.cshtml",
               "RelativeToolTip": "HealthcareAPI\\Views\\Patient\\Create.cshtml",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAH8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAPwAAAAAAAAAAAAAAB4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-02T09:12:34.541Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Doctor.cs",
-              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\Models\\Doctor.cs",
-              "RelativeDocumentMoniker": "Data.AccessLayer\\Models\\Doctor.cs",
-              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\Models\\Doctor.cs",
-              "RelativeToolTip": "Data.AccessLayer\\Models\\Doctor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T07:56:18.336Z",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Patient\\Index.cshtml",
+              "RelativeDocumentMoniker": "HealthcareAPI\\Views\\Patient\\Index.cshtml",
+              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Patient\\Index.cshtml",
+              "RelativeToolTip": "HealthcareAPI\\Views\\Patient\\Index.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-02T08:56:48.081Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Patient.cs",
-              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\Models\\Patient.cs",
-              "RelativeDocumentMoniker": "Data.AccessLayer\\Models\\Patient.cs",
-              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\Models\\Patient.cs",
-              "RelativeToolTip": "Data.AccessLayer\\Models\\Patient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAsAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Doctor\\Index.cshtml",
+              "RelativeDocumentMoniker": "HealthcareAPI\\Views\\Doctor\\Index.cshtml",
+              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Doctor\\Index.cshtml",
+              "RelativeToolTip": "HealthcareAPI\\Views\\Doctor\\Index.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T15:11:30.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PrescriptionController.cs",
+              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Controllers\\PrescriptionController.cs",
+              "RelativeDocumentMoniker": "HealthcareAPI\\Controllers\\PrescriptionController.cs",
+              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Controllers\\PrescriptionController.cs",
+              "RelativeToolTip": "HealthcareAPI\\Controllers\\PrescriptionController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAkwEwAAACaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T07:56:39.019Z",
+              "WhenOpened": "2024-12-30T15:13:41.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Global.Entity\\Patient.cs",
+              "RelativeDocumentMoniker": "Global.Entity\\Patient.cs",
+              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\Global.Entity\\Patient.cs",
+              "RelativeToolTip": "Global.Entity\\Patient.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAADwvwUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T12:55:49.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Doctor\\Create.cshtml",
+              "RelativeDocumentMoniker": "HealthcareAPI\\Views\\Doctor\\Create.cshtml",
+              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Doctor\\Create.cshtml",
+              "RelativeToolTip": "HealthcareAPI\\Views\\Doctor\\Create.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAGoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-02T09:12:44.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Prescription\\Index.cshtml",
+              "RelativeDocumentMoniker": "HealthcareAPI\\Views\\Prescription\\Index.cshtml",
+              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Prescription\\Index.cshtml",
+              "RelativeToolTip": "HealthcareAPI\\Views\\Prescription\\Index.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAuwF4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T15:12:02.776Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Prescription.cs",
-              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\Models\\Prescription.cs",
-              "RelativeDocumentMoniker": "Data.AccessLayer\\Models\\Prescription.cs",
-              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\Models\\Prescription.cs",
-              "RelativeToolTip": "Data.AccessLayer\\Models\\Prescription.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAsAAAAAAAAAA==",
+              "Title": "PatientSearchViewModel.cs",
+              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Models\\PatientSearchViewModel.cs",
+              "RelativeDocumentMoniker": "HealthcareAPI\\Models\\PatientSearchViewModel.cs",
+              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Models\\PatientSearchViewModel.cs",
+              "RelativeToolTip": "HealthcareAPI\\Models\\PatientSearchViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T08:26:06.334Z",
+              "WhenOpened": "2025-01-28T16:40:03.242Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Global.Entity\\Doctor.cs",
+              "RelativeDocumentMoniker": "Global.Entity\\Doctor.cs",
+              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\Global.Entity\\Doctor.cs",
+              "RelativeToolTip": "Global.Entity\\Doctor.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAA/wCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T08:57:15.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DoctorDA.cs",
+              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\DoctorDA.cs",
+              "RelativeDocumentMoniker": "Data.AccessLayer\\DoctorDA.cs",
+              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\DoctorDA.cs",
+              "RelativeToolTip": "Data.AccessLayer\\DoctorDA.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAowHsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T08:13:53.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PatientDA.cs",
+              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\PatientDA.cs",
+              "RelativeDocumentMoniker": "Data.AccessLayer\\PatientDA.cs",
+              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\PatientDA.cs",
+              "RelativeToolTip": "Data.AccessLayer\\PatientDA.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAkwHwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T17:34:39.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "PrescriptionDA.cs",
               "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\PrescriptionDA.cs",
               "RelativeDocumentMoniker": "Data.AccessLayer\\PrescriptionDA.cs",
@@ -302,49 +355,47 @@
               "RelativeToolTip": "Data.AccessLayer\\PrescriptionDA.cs",
               "ViewState": "AgIAAHMAAAAAAAAAAAAkwIYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T09:20:52.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-31T09:20:52.068Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DoctorController.cs",
-              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Controllers\\DoctorController.cs",
-              "RelativeDocumentMoniker": "HealthcareAPI\\Controllers\\DoctorController.cs",
-              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Controllers\\DoctorController.cs",
-              "RelativeToolTip": "HealthcareAPI\\Controllers\\DoctorController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowDsAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "Prescription.cs",
+              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\Models\\Prescription.cs",
+              "RelativeDocumentMoniker": "Data.AccessLayer\\Models\\Prescription.cs",
+              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\Models\\Prescription.cs",
+              "RelativeToolTip": "Data.AccessLayer\\Models\\Prescription.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T08:12:15.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Prescription\\Index.cshtml",
-              "RelativeDocumentMoniker": "HealthcareAPI\\Views\\Prescription\\Index.cshtml",
-              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Prescription\\Index.cshtml",
-              "RelativeToolTip": "HealthcareAPI\\Views\\Prescription\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-30T15:12:02.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Doctor\\Index.cshtml",
-              "RelativeDocumentMoniker": "HealthcareAPI\\Views\\Doctor\\Index.cshtml",
-              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Doctor\\Index.cshtml",
-              "RelativeToolTip": "HealthcareAPI\\Views\\Doctor\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-30T15:11:30.402Z"
+              "WhenOpened": "2025-01-15T08:26:06.334Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "Data.AccessLayer\\Models\\Patient.cs",
+              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\Models\\Patient.cs",
+              "RelativeToolTip": "Data.AccessLayer\\Models\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T07:56:39.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\Models\\Doctor.cs",
+              "RelativeDocumentMoniker": "Data.AccessLayer\\Models\\Doctor.cs",
+              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\Models\\Doctor.cs",
+              "RelativeToolTip": "Data.AccessLayer\\Models\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T07:56:18.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "HealthcareAPI\\Controllers\\HomeController.cs",
@@ -356,19 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PrescriptionController.cs",
-              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Controllers\\PrescriptionController.cs",
-              "RelativeDocumentMoniker": "HealthcareAPI\\Controllers\\PrescriptionController.cs",
-              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Controllers\\PrescriptionController.cs",
-              "RelativeToolTip": "HealthcareAPI\\Controllers\\PrescriptionController.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAswFsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T15:13:41.021Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "PrescriptionViewModel.cs",
               "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Healthcare.API\\Models\\PrescriptionViewModel.cs",
               "RelativeDocumentMoniker": "Healthcare.API\\Models\\PrescriptionViewModel.cs",
@@ -380,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "PatientViewModel.cs",
               "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Healthcare.API\\Models\\PatientViewModel.cs",
               "RelativeDocumentMoniker": "Healthcare.API\\Models\\PatientViewModel.cs",
@@ -392,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "DoctorViewModel.cs",
               "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Healthcare.API\\Models\\DoctorViewModel.cs",
               "RelativeDocumentMoniker": "Healthcare.API\\Models\\DoctorViewModel.cs",
@@ -404,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Prescription.cs",
               "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Global.Entity\\Prescription.cs",
               "RelativeDocumentMoniker": "Global.Entity\\Prescription.cs",
@@ -416,31 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Patient.cs",
-              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Global.Entity\\Patient.cs",
-              "RelativeDocumentMoniker": "Global.Entity\\Patient.cs",
-              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\Global.Entity\\Patient.cs",
-              "RelativeToolTip": "Global.Entity\\Patient.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowAUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T12:55:49.241Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Doctor.cs",
-              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Global.Entity\\Doctor.cs",
-              "RelativeDocumentMoniker": "Global.Entity\\Doctor.cs",
-              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\Global.Entity\\Doctor.cs",
-              "RelativeToolTip": "Global.Entity\\Doctor.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwCkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T08:57:15.372Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Prescription\\Create.cshtml",
               "RelativeDocumentMoniker": "HealthcareAPI\\Views\\Prescription\\Create.cshtml",
@@ -452,7 +467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "DoctorSearchViewModel.cs",
               "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Models\\DoctorSearchViewModel.cs",
               "RelativeDocumentMoniker": "HealthcareAPI\\Models\\DoctorSearchViewModel.cs",
@@ -464,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "PrescriptionSearchViewModel.cs",
               "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Models\\PrescriptionSearchViewModel.cs",
               "RelativeDocumentMoniker": "HealthcareAPI\\Models\\PrescriptionSearchViewModel.cs",
@@ -476,7 +491,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "IPrescriptionDA.cs",
               "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Data.AccessLayer\\Interface\\IPrescriptionDA.cs",
               "RelativeDocumentMoniker": "Data.AccessLayer\\Interface\\IPrescriptionDA.cs",
@@ -488,7 +503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "PrescriptionBC.cs",
               "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Business.AccesLayer\\PrescriptionBC.cs",
               "RelativeDocumentMoniker": "Business.AccesLayer\\PrescriptionBC.cs",
@@ -500,7 +515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "IPrescriptionBC.cs",
               "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\Business.AccesLayer\\Interface\\IPrescriptionBC.cs",
               "RelativeDocumentMoniker": "Business.AccesLayer\\Interface\\IPrescriptionBC.cs",
@@ -524,7 +539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "HealthcareAPI\\Views\\Shared\\_Layout.cshtml",
@@ -533,18 +548,6 @@
               "ViewState": "AgIAAFEAAAAAAAAAAAAAAFgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-02T06:10:19.772Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "PatientSearchViewModel.cs",
-              "DocumentMoniker": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Models\\PatientSearchViewModel.cs",
-              "RelativeDocumentMoniker": "HealthcareAPI\\Models\\PatientSearchViewModel.cs",
-              "ToolTip": "D:\\Development\\Practice\\Project\\Healthcare\\HealthcareAPI\\Models\\PatientSearchViewModel.cs",
-              "RelativeToolTip": "HealthcareAPI\\Models\\PatientSearchViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T16:40:03.242Z"
             },
             {
               "$type": "Document",

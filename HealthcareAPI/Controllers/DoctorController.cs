@@ -47,7 +47,7 @@ namespace Healthcare.UI.Controllers
 
             if (!string.IsNullOrWhiteSpace(doctor.Name))
             {
-                doctor.doctors = doctor.doctors.Where(x => x.FirstName.Contains(doctor.Name) || x.LastName.Contains(doctor.Name)).ToList();
+                doctor.doctors = doctor.doctors.Where(x => x.FirstName.ToLower().Trim().Contains(doctor.Name.ToLower().Trim()) || x.LastName.ToLower().Trim().Contains(doctor.Name.ToLower().Trim())).ToList();
             }
 
             if (doctor.Status != null && doctor.Status != false)
