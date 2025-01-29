@@ -19,8 +19,12 @@ namespace Healthcare.UI.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            List<GE::Prescription> prescriptions = await this.prescriptionBC.GetPrescription();
-            return View(prescriptions);
+            //List<GE::Prescription> prescriptions = await this.prescriptionBC.GetPrescription();
+            PrescriptionSearchViewModel prescription = new PrescriptionSearchViewModel();
+            prescription.prescriptions = new List<GE::Prescription>();
+            prescription.prescriptions = await this.prescriptionBC.GetPrescription();
+            prescription.prescriptions = prescription.prescriptions.Where(p => p.Status == true).OrderBy(a => a.Medicine).ToList();
+            return View(prescription);
         }
 
         public async Task<IActionResult> Create()
@@ -61,6 +65,25 @@ namespace Healthcare.UI.Controllers
             string Response = await this.prescriptionBC.Save(prescription);
             return Json(Response);
         }
+
+        [HttpPost]
+
+        public async Task<IActionResult> Index(PrescriptionSearchViewModel prescription)
+        {
+            prescription.prescriptions = this.prescriptionBC.GetPrescription().Result.OrderBy(a => a.Medicine).ToList();
+
+            if (!string.IsNullOrWhiteSpace(prescription.Name))
+            {
+                prescription.prescriptions = prescription.prescriptions.Where(x => x.Medicine.Contains(prescription.Name)).ToList();
+            }
+
+            if (prescription.Status != null && prescription.Status != false)
+            {
+                prescription.prescriptions = prescription.prescriptions.Where(p => p.Status == true).ToList();
+            }
+            return View(prescription);
+        }
+
 
         public async Task<IActionResult> Remove(string id)
         {

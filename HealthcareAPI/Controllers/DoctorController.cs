@@ -1,4 +1,5 @@
 ﻿using Business.AccessLayer.Interface;
+using Healthcare.UI.Models;
 using Microsoft.AspNetCore.Mvc;
 using GE = Global.Entity;
 
@@ -13,8 +14,12 @@ namespace Healthcare.UI.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            List<GE::Doctor> doctors = await this.doctorBC.GetDoctors();
-            return View(doctors);
+            //List<GE::Doctor> doctors = await this.doctorBC.GetDoctors();
+            DoctorSearchViewModel doctor = new DoctorSearchViewModel();
+            doctor.doctors = new List<GE::Doctor>();
+            doctor.doctors = await this.doctorBC.GetDoctors();
+            doctor.doctors = doctor.doctors.Where(p => p.Status == true).OrderBy(a => a.FirstName).ToList();
+            return View(doctor);
         }
 
         public IActionResult Create()
@@ -34,8 +39,27 @@ namespace Healthcare.UI.Controllers
             return Json(Response);
         }
 
+        [HttpPost]
+
+        public async Task<IActionResult> Index(DoctorSearchViewModel doctor)
+        {
+            doctor.doctors = this.doctorBC.GetDoctors().Result.OrderBy(a => a.FirstName).ToList();
+
+            if (!string.IsNullOrWhiteSpace(doctor.Name))
+            {
+                doctor.doctors = doctor.doctors.Where(x => x.FirstName.Contains(doctor.Name) || x.LastName.Contains(doctor.Name)).ToList();
+            }
+
+            if (doctor.Status != null && doctor.Status != false)
+            {
+                doctor.doctors = doctor.doctors.Where(p => p.Status == true).ToList();
+            }
+            return View(doctor);
+        }
+
         public async Task<IActionResult> Remove(string id)
         {
+
             string Response = await this.doctorBC.RemoveDoctor(Convert.ToInt32(id));
             return Json(Response);
         }

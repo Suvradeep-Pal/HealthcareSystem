@@ -104,7 +104,7 @@
             isproceed = false;
         }
 
-        else if (!/^[a-zA-Z\s]+$/.test(firstname)) {
+        else if (!/^[a-zA-Z\s\.]+$/.test(firstname)) {
             $('#txtfirstname').css('border-color', 'red');
             $('#validateFirstName').text('Name can only contain letters and spaces!').show();
             isproceed = false;

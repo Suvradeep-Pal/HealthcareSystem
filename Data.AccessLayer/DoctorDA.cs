@@ -37,7 +37,8 @@ namespace Data.AccessLayer
                         DateCreated = item.DateCreated,
                         UserCreated = item.UserCreated,
                         DateUpdated = item.DateUpdated,
-                        UserUpdated = item.UserUpdated
+                        UserUpdated = item.UserUpdated,
+                        Status = item.Status
                     });
                 });
             }
@@ -115,7 +116,10 @@ namespace Data.AccessLayer
             {
                 try
                 {
-                    this.healthcareContext.Doctors.Remove(_data);
+                    //this.healthcareContext.Doctors.Remove(_data);
+                    _data.Status = (_data.Status == false) ? true : false;
+                    _data.DateUpdated = DateTime.Now;
+                    _data.UserUpdated = 0;
                     await this.healthcareContext.SaveChangesAsync();
                     Response = "pass";
                 }

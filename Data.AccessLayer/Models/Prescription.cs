@@ -25,6 +25,8 @@ public partial class Prescription
 
     public int? UserUpdated { get; set; }
 
+    public bool Status { get; set; } = true;
+
     //public virtual Doctor? DIdNavigation { get; set; }
 
     //public virtual Patient? PIdNavigation { get; set; }

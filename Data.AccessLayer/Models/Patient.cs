@@ -27,5 +27,7 @@ public partial class Patient
 
     public int? UserUpdated { get; set; }
 
+    public bool Status { get; set; } = true;
+
     //public virtual ICollection<Prescription> Prescriptions { get; set; } = new List<Prescription>();
 }

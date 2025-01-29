@@ -3,6 +3,7 @@ using Business.AccesLayer;
 using GE = Global.Entity;
 using Business.AccessLayer.Interface;
 using Global.Entity;
+using Healthcare.UI.Models;
 
 namespace HealthcareAPI.Controllers
 {
@@ -15,8 +16,11 @@ namespace HealthcareAPI.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            List<GE::Patient> patients = await this.patientBC.GetPatients();
-            return View(patients);
+            PatientSearchViewModel patient = new PatientSearchViewModel();
+            patient.patients = new List<Patient>();
+            patient.patients = await this.patientBC.GetPatients();
+            patient.patients = patient.patients.Where(p => p.Status == true).OrderBy(a => a.FirstName).ToList();
+            return View(patient);
         }
 
         
@@ -39,14 +43,21 @@ namespace HealthcareAPI.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Index(Patient patient)
+        
+        public async Task<IActionResult> Index(PatientSearchViewModel patient)
         {
-            if (!ModelState.IsValid)
+            patient.patients = this.patientBC.GetPatients().Result.OrderBy(a => a.FirstName).ToList();
+
+            if (!string.IsNullOrWhiteSpace(patient.Name))
             {
-                
+                patient.patients = patient.patients.Where(x => x.FirstName.ToLower().Trim().Contains(patient.Name.ToLower().Trim()) || x.LastName.ToLower().Trim().Contains(patient.Name.ToLower().Trim())).ToList();
             }
-            return View();
+           
+            if(patient.Status != null && patient.Status != false)
+            {
+                patient.patients = patient.patients.Where(p =>  p.Status == true).ToList();
+            }
+            return View(patient);
         }
 
         public async Task<IActionResult> Remove(string id)
